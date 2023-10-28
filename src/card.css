@@ -1,0 +1,115 @@
+/* combinedStyles.css */
+
+/* Navbar Styles */
+
+  
+  /* SuperheroTrademark Styles */
+  /* CardComponent.css */
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .card {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    color: white;
+    font-weight: bold;
+    position: relative; /* Add this line to make image scaling relative to the card */
+  }
+  
+  .card-image {
+    max-width: 100%; /* Set the maximum width to 100% of the card's width */
+    max-height: 100%; /* Set the maximum height to 100% of the card's height */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally within the card */
+    object-fit: contain; /* Adjust how the image fits within the container */
+    border-radius: 10px; /* Match the card's border radius */
+    position: absolute; /* Position the image relative to the card */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  /* ... (other styles) */
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-name {
+    font-size: 20px;
+  }
+  
+  
+  /* Trade Styles */
+  .trade-container {
+    background-color: #f1f1f1;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .trade-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: left;
+  }
+  .center {
+    text-align: center;
+    padding-top: 3%;
+  }
+
+  /* Add this CSS to your card.css or a separate CSS file */
+
+.explanation {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.explanation p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.appreciation {
+  text-align: center;
+  position: absolute;
+  top: 40%; /* Adjust this value to move the appreciation div closer to the navbar */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center horizontally and vertically */
+  width: 80%;
+  max-width: 600px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+
+
+
+
+

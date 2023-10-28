@@ -1,0 +1,98 @@
+/* Reset some default browser styles */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the navigation bar */
+nav {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0; /* Increase the padding to make the navbar taller */
+    min-height: 60px; /* Increase the min-height to make the navbar taller */
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style the container and cards */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: calc(33.33% - 20px); /* Adjust the width as needed */
+    min-width: 300px; /* Specify a minimum width */
+    margin-top: 5%; /* Adjust the top margin as needed */
+}
+
+/* Optional styling for card titles */
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+/* Styling for the header */
+.header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f0f0f0;
+    color: #007BFF;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    nav ul {
+        text-align: center;
+    }
+}
+.watermark {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Place it behind other elements */
+    opacity: 0.5; /* Adjust the opacity as needed */
+    pointer-events: none; /* Allow interactions with elements beneath it */
+  }
+  
+  .watermark img {
+    width: 100%; /* Adjust the size of the watermark image */
+    height: 100%; /* Adjust the size of the watermark image */
+    object-fit: contain; /* Adjust how the image fits within the div */
+  }
+  
